@@ -1,0 +1,71 @@
+{
+	"sdqQueryBuilder": [{
+		"dentistChecks": {
+			"classification": {
+				"topLevelCategoryId": "LACS",
+				"topLevelCategoryDesc": "Looked after children services",
+				"categories": [{
+					"categoryId": "DENTIST",
+					"categoryDesc": "Dentist check",
+					"answerFormWith": "YES"
+				},
+				{
+					"categoryId": "DENREF",
+					"categoryDesc": "Dentist refused",
+					"answerFormWith": "NO"
+				},
+				{
+					"categoryId": "NODENT",
+					"categoryDesc": "No dentist",
+					"answerFormWith": "NO"
+				}],
+				"orderBy": "desc"
+			}
+		},
+		"healthChecks": {
+			"healthCheck": {
+				"activity": {
+					"class": "HEALTH",
+					"classDesc": "Health",
+					"types": [{
+						"type": "INITASST",
+						"typeDesc": "Initial assessment",
+						"answerFormWith": "YES"
+					},
+					{
+						"type": "REVWASST",
+						"typeDesc": "Review assessment""answerFormWith": "YESR"
+					}],
+					"orderBy": "desc"
+				}
+			},
+			"HealthSurveillancesOrHealthPromotion": {
+				"classification": {
+					"topLevelCategoryId": "LACS",
+					"topLevelCategoryDesc": "Looked after children services",
+					"categories": [{
+						"categoryId": "CHKUPTO",
+						"categoryDesc": "Checks up to date"
+					},
+					{
+						"categoryId": "CHKNOTUP",
+						"categoryDesc": "Checks not up to date"
+					}],
+					"orderBy": "desc"
+				},
+				"ReviewHealthAssessmentFormsReceived": {
+					"activity": {
+						"class": "HEALTH",
+						"classDesc": "Health",
+						"types": [{
+							"type": "UPDTASST",
+							"typeDesc": "Assessments up to date",
+							"answerFormWith": "YES"
+						}],
+						"orderBy": "desc"
+					}
+				}
+			}
+		}
+	}]
+}
